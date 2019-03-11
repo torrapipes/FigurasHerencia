@@ -1,13 +1,15 @@
 package circulo;
 
-public class Circulo {
+import figura.Figura;
+
+public class Circulo extends Figura {
 
     double radio = 0d;
-    String nombre = null;
     private final double PI = Math.PI;
 
     public Circulo(double radio) {
 
+        super();
         this.radio = radio;
 
     }
@@ -15,15 +17,8 @@ public class Circulo {
 
     public Circulo(String nombre, double radio) {
 
+        super(nombre);
         this.radio = radio;
-        this.nombre = nombre;
-
-    }
-
-
-    public String getNombre() {
-
-        return this.nombre;
 
     }
 

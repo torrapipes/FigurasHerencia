@@ -1,6 +1,8 @@
 package rectangulo;
 
-public class Rectangulo {
+import figura.Figura;
+
+public class Rectangulo extends Figura {
 
     String nombre = null;
     double base = 0d;
